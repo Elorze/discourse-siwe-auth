@@ -1,16 +1,10 @@
 plugins:
   discourse_siwe_enabled:
     default: true
-    enum:
-      - true
-      - false
-    description: "Enable Sign In with Ethereum authentication"
   siwe_project_id:
     client: true
     default: ''
-    description: "WalletConnect Project ID from https://cloud.walletconnect.com/"
   siwe_statement:
     client: true
     default: 'Sign-in to Discourse via Ethereum'
-    description: "Statement shown to users when signing in with Ethereum"
 

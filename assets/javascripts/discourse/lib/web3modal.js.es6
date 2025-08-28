@@ -15,11 +15,11 @@ const Web3Modal = EmberObject.extend({
         await this.loadScripts();
         const Web3Modal = window.Web3Modal;
         const chains = [window.WagmiCore.mainnet, window.WagmiCore.polygon];
-        const projectId = b35da7e5182b8d7765a51e895ac80b84;
+        const projectId = "b35da7e5182b8d7765a51e895ac80b84";
         const { publicClient } = window.WagmiCore.configureChains(chains, [window.Web3ModalEth.w3mProvider({ projectId })]);
         const wagmiConfig = window.WagmiCore.createConfig({
             autoConnect: true,
-            connectors: window.Web3ModalEth.w3mConnectors({ projectId, version: 1, chains }),
+            connectors: window.Web3ModalEth.w3mConnectors({ projectId, chains }),
             publicClient
         });
         const EthereumClient = window.Web3ModalEth.EthereumClient;

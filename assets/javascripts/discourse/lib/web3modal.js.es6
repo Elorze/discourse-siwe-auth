@@ -15,7 +15,7 @@ const Web3Modal = EmberObject.extend({
         await this.loadScripts();
         const Web3Modal = window.Web3Modal;
         const chains = [window.WagmiCore.mainnet, window.WagmiCore.polygon];
-        const projectId = "b35da7e5182b8d7765a51e895ac80b84";
+        const projectId = env.PROJECT_ID;
         const { publicClient } = window.WagmiCore.configureChains(chains, [window.Web3ModalEth.w3mProvider({ projectId })]);
         const wagmiConfig = window.WagmiCore.createConfig({
             autoConnect: true,

@@ -1,0 +1,9 @@
+plugins:
+  discourse_siwe_enabled:
+    default: true
+  discourse_siwe_project_id:
+    client: true
+    default: ''
+  discourse_siwe_statement:
+    client: true
+    default: 'Sign-in to Discourse via Ethereum'

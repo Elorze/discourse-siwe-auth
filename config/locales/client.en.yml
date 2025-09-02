@@ -1,10 +1,10 @@
 en:
   site_settings:
     discourse_siwe_enabled: "Either the plugin is enabled or not"
-    siwe_project_id: "Project ID for Web3Modal"
-    siwe_statement: "Statement that will be displayed in the message"
+    discourse_siwe_project_id: "Project ID for Web3Modal"
+    discourse_siwe_statement: "Statement that will be displayed in the message"
     placeholder:
-      siwe_json_rpc:
+      discourse_siwe_json_rpc:
         key: "Chain ID"
         value: "JSON RPC URL"
   js:

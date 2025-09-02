@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
-# name: discourse-siwe
+# name: discourse-siwe-auth
 # about: A discourse plugin to enable users to authenticate via Sign In with Ethereum
 # version: 0.1.2
 
 enabled_site_setting :discourse_siwe_enabled
 register_svg_icon 'fab-ethereum'
-register_asset 'stylesheets/discourse-siwe.scss'
+register_asset 'stylesheets/discourse-siwe-auth.scss'
 
 %w[
   ../lib/omniauth/strategies/siwe.rb
@@ -62,6 +62,6 @@ after_initialize do
   ].each { |path| load File.expand_path(path, __FILE__) }
 
   Discourse::Application.routes.prepend do
-    mount ::DiscourseSiwe::Engine, at: '/discourse-siwe'
+    mount ::DiscourseSiwe::Engine, at: '/discourse-siwe-auth'
   end
 end

@@ -21,7 +21,7 @@ export default Controller.extend({
       const siteSettings = api.container.lookup("site-settings:main");
 
       return {
-        PROJECT_ID: siteSettings.siwe_project_id,
+        PROJECT_ID: siteSettings.discourse_siwe_project_id,
       }
     });
     let provider = Web3Modal.create();

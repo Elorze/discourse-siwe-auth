@@ -19,7 +19,7 @@ module OmniAuth
 
       def request_phase
         query_string = env['QUERY_STRING']
-        redirect "/discourse-siwe/auth?#{query_string}"
+        redirect "/discourse-siwe-auth/auth?#{query_string}"
       end
 
       def callback_phase

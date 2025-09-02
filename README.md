@@ -49,7 +49,7 @@ cd /var/discourse
 ./launcher rebuild app
 ```
 To disable it either remove the plugin or uncheck discourse siwe enabled at 
-(Admin Settings -> Plugins -> discourse-siwe -> discourse siwe enabled ).
+(Admin Settings -> Plugins -> discourse-siwe-auth -> discourse siwe enabled ).
 
 ![Discourse Plugins](/settings.png "Discourse Plugins")
 ![Enable plugin at settings](/enable.png "Enable plugin at settings")

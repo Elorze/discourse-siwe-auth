@@ -1,9 +1,7 @@
-export default function () {
-  this.route(
-    "siwe-auth",
-    { path: "/discourse-siwe/auth" },
-    function () {
-      this.route("index", { path: "/" });
-    }
-  );
-}
+export default {
+  resource: "siwe-auth",
+  map() {
+    this.route("index");
+  },
+  path: "/discourse-siwe-auth/auth",
+};

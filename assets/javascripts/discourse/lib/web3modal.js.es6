@@ -34,7 +34,7 @@ const Web3Modal = EmberObject.extend({
 
     async loadScripts() {
         return Promise.all([
-            loadScript("/plugins/discourse-siwe/javascripts/web3bundle.min.js"),
+            loadScript("/plugins/discourse-siwe-auth/javascripts/web3bundle.min.js"),
         ]);
     },
 
@@ -53,7 +53,7 @@ const Web3Modal = EmberObject.extend({
 
         const {
             message
-        } = await ajax('/discourse-siwe/message', {
+        } = await ajax('/discourse-siwe-auth/message', {
             data: {
                 eth_account: address,
                 chain_id: await account.connector.getChainId(),
